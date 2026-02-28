@@ -11,7 +11,8 @@ pipeline {
 
         stage('Run Container') {
             steps {
-                sh 'docker run -d -p 8082:80 devops-lab-image'
+                sh 'docker rm -f devops-container || true'
+                sh 'docker run -d -p 8082:80 --name devops-container devops-lab-image'
             }
         }
     }
