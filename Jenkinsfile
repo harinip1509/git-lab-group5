@@ -11,7 +11,7 @@ pipeline {
 
         stage('Run Container') {
             steps {
-                sh 'docker run -d -p 8081:80 devops-lab-image'
+                sh 'docker run -d -p 8082:80 devops-lab-image'
             }
         }
     }
