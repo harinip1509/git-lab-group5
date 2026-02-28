@@ -5,7 +5,7 @@ pipeline {
 
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/your-username/your-repo-name.git'
+                git 'https://github.com/harinip1509/git-lab-group5.git'
             }
         }
 
